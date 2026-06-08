@@ -15,7 +15,7 @@
 
 
 - **Chosen model:** `Qwen/Qwen3-VL-2B-Instruct`
-![img1](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/_image/Pasted%20image%2020260606001024.png)
+![img1](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260606001024.png)
 
 - **Datasets:**
 
@@ -45,14 +45,14 @@ There is a difference in latex:
 
 **Some real examples:**
 
-| image                                                                                                    | real                                                       | Zero-shot                                                       | **One-shot**                                                                 | Two-shot                                                          | **SFT (LaTeX_OCR)**                                                 | **SFT (LaTeX_OCR + MathWriting-human)**                                |
-|----------------------------------------------------------------------------------------------------------|------------------------------------------------------------| --------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| ![img2](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260603152842.png) | `\\sqrt { b ^ { 2 } - 4 a c }`                             | ` ```latex\n\\sqrt{b^2 - 4ac}\n``` `                            | ` ```latex\n\\sqrt{b^2 - 4ac}\n``` `                                         | ` \\sqrt { b ^ { 2 } - 4 a c } `                                  | ` \\sqrt { b ^ { 2 } - 4 a c } `                                    | ` \\sqrt{b^{2}-4ac} `                                                  |
+| image                                                                                                    | real                                                      | Zero-shot                                                       | **One-shot**                                                                 | Two-shot                                                          | **SFT (LaTeX_OCR)**                                                 | **SFT (LaTeX_OCR + MathWriting-human)**                                |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------| --------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| ![img2](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260603152842.png) | `\\sqrt { b ^ { 2 } - 4 a c }`                            | ` ```latex\n\\sqrt{b^2 - 4ac}\n``` `                            | ` ```latex\n\\sqrt{b^2 - 4ac}\n``` `                                         | ` \\sqrt { b ^ { 2 } - 4 a c } `                                  | ` \\sqrt { b ^ { 2 } - 4 a c } `                                    | ` \\sqrt{b^{2}-4ac} `                                                  |
 | ![img3](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260603152849.png) | `\\sqrt { x - y - z + x ^ { 2 } + y ^ { 2 } + z ^ { 2 } }` | ` ```latex\n\\sqrt{x - y - z + x^2 + y^2 + z^2}\n``` `          | ` ```latex\n\\sqrt{x - y - z + x^2 + y^2 + z^2}\n``` `                       | ` \\sqrt{x - y - z + x^2 + y^2 + z^2} `                           | ` \\sqrt { x - y - z + x ^ { 2 } + y ^ { 2 } + z ^ { 2 } } `        | ` \\sqrt { x - y - z + x ^ { 2 } + y ^ { 2 } + z ^ { 2 } } `           |
 | ![img4](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260603153247.png) | `\\frac { 2 \\tan \\alpha } { 1 - \\tan ^ { 2 } \\alpha }` | ` ```latex\n\\frac{2 \\tan \\alpha}{1 - \\tan^2 \\alpha}\n``` ` | ` $$\\frac { 2 \\tan \\alpha } { 1 - \\tan ^ { 2 } \\alpha }$$ `             | ` \\frac { 2 \\tan \\alpha } { 1 - \\tan^2 \\alpha } `            | ` \\frac { 2 \\tan \\alpha } { 1 - \\tan ^ { 2 } \\alpha } `        | ` \\frac { 2 \\tan \\alpha } { 1 - \\tan ^ { 2 } \\alpha } `           |
-| ![img5](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/photo1%201.jpg)                      | width=100)                                                 |                                                            | ` ```latex \sqrt{x - y + z - x^2 + y^2 + z^3} = 100 ``` `       | ` ```latex \sqrt{x - y + z - x^2 + y^2 + z^3} = 100 ``` `                    | ` \sqrt { x - y + z - x ^ { 2 } + y ^ { 2 } + z ^ { 3 } } = 100 ` | ` \sqrt { x - y + z - x ^ { 2 } + y ^ { 2 } + z ^ { 3 } } = 1 0 0 ` | ` \sqrt { x - y + z - x ^ { 2 } + y ^ { 2 } + z ^ { 3 } } = 1 0 0<br>` |
-| ![img6](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/photo2.jpg)                          | width=100)                                                 |                                                            | ` ```latex x + y + z \approx 8 ``` `                            | ` ```latex x + y + z \approx 8 ``` `                                         | ` $$x + y + z \approx 8$$ `                                       | ` x + y + z \approx 8 `                                             | ` x + y + z \approx 8 `                                                |
-| ![img7](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/_image/photo3.jpg)                   | width=100)                                                 |                                                            | ` ```latex D_{KL}(x\|\|y) ``` `                                 | ` ```latex \mathrm{P}_{\mathrm{K}} \left( x \, \mathrm{I} \, y \right) ``` ` | ` \mathrm{P}_{\mathrm{K}}\left(x \, \mathrm{I} \, y\right) `      | ` P _ { K \rightarrow } ( X 1 1 Y ) `                               | ` P _ { K \cup L } ( X \| Y ) `                                        |
+| ![img5](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/photo1%201.jpg)                      |                                                            | ` ```latex \sqrt{x - y + z - x^2 + y^2 + z^3} = 100 ``` `       | ` ```latex \sqrt{x - y + z - x^2 + y^2 + z^3} = 100 ``` `                    | ` \sqrt { x - y + z - x ^ { 2 } + y ^ { 2 } + z ^ { 3 } } = 100 ` | ` \sqrt { x - y + z - x ^ { 2 } + y ^ { 2 } + z ^ { 3 } } = 1 0 0 ` | ` \sqrt { x - y + z - x ^ { 2 } + y ^ { 2 } + z ^ { 3 } } = 1 0 0<br>` |
+| ![img6](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/photo2.jpg)                          |                                                           | ` ```latex x + y + z \approx 8 ``` `                            | ` ```latex x + y + z \approx 8 ``` `                                         | ` $$x + y + z \approx 8$$ `                                       | ` x + y + z \approx 8 `                                             | ` x + y + z \approx 8 `                                                |
+| ![img7](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/photo3.jpg)                          |                                                           | ` ```latex D_{KL}(x\|\|y) ``` `                                 | ` ```latex \mathrm{P}_{\mathrm{K}} \left( x \, \mathrm{I} \, y \right) ``` ` | ` \mathrm{P}_{\mathrm{K}}\left(x \, \mathrm{I} \, y\right) `      | ` P _ { K \rightarrow } ( X 1 1 Y ) `                               | ` P _ { K \cup L } ( X \| Y ) `                                        |
 
 Some notices:
 - In zero-shot model generates text using ` ```latex `, ` ``` ` и ` $$ `, mainly with  ` ```latex ` and ` ``` `. In one-shot answers still there is the same problem, but it mainly uses `$$`. In two-shot answers still there are `$$` in approximately 50%.
@@ -64,17 +64,17 @@ Some notices:
 ## the first sft wrong images
 ![img9](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260608013424.png)
 **Loss curve for the second sft**
-![img10](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%20260608003344.png)
+![img10](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260608003344.png)
 # Task 2 Streamlit Application
 
 **Task:** Develop a Streamlit application that receives an image of a handwritten formula and returns the rendered LaTeX output. 
 
 ## without photo
-![img11](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%20260608010153.png)
+![img11](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260608010153.png)
 ## with a photo
-![img12](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%20260608010249.png)
+![img12](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260608010249.png)
 ## with answer
 
-![img13](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%20260608010415.png)
+![img13](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260608010415.png)
 
-![img14](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%20260608010609.png)
+![img14](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/Pasted%20image%2020260608010609.png)
