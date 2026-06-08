@@ -15,7 +15,7 @@
 
 
 - **Chosen model:** `Qwen/Qwen3-VL-2B-Instruct`
-![img1](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/_image/Pasted image 20260606001024.png)
+![img1](https://github.com/Gagr300/qwen_latex_ocr/blob/main/_images/_image/Pasted%image%20260606001024.png)
 
 - **Datasets:**
 
