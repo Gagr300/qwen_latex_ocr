@@ -33,13 +33,13 @@ There is a difference in latex:
 > [!cite] 
 > In [research](https://github.com/LinXueyuanStdio/LaTeX_OCR), the linxy/LaTeX_OCR dataset was created for, were used four metrics: perplexity, EditDistance, BLEU-4 and ExactMatchScore.
 
-|                                                              | perplexity | EditDistance | BLEU-4  | TeXBLEU | ExactMatchScore | ```sparse_softmax_cross_entropy_with_logits``` |
-| ------------------------------------------------------------ | ---------- | ------------ | ------- | ------- | --------------- | ---------------------------------------------- |
-| **Zero-shot inference**                                      |            | 0.55326      | 0.07669 | 0.75931 | 0.0             |                                                |
-| **One-shot inference**                                       |            | 0.32362      | 0.33414 | 0.78631 | 0.01429         |                                                |
-| **Two-shot inference**                                       |            | 0.29282      | 0.39222 | 0.83945 | 0.22857         |                                                |
-| **SFT (linxy/LaTeX_OCR:train)**                              |            | 0.00580      | 0.98201 | 0.99453 | 0.9285          |                                                |
-| **SFT (linxy/LaTeX_OCR:train + deepcopy/MathWriting-human)** |            | 0.00448      | 0.98665 | 0.99621 | 0.94286         |                                                |
+|                                                              | EditDistance | BLEU-4  | TeXBLEU | ExactMatchScore | ```sparse_softmax_cross_entropy_with_logits``` |
+| ------------------------------------------------------------ | ------------ | ------- | ------- | --------------- | ---------------------------------------------- |
+| **Zero-shot inference**                                      | 0.55326      | 0.07669 | 0.75931 | 0.0             |                                                |
+| **One-shot inference**                                       | 0.32362      | 0.33414 | 0.78631 | 0.01429         |                                                |
+| **Two-shot inference**                                       | 0.29282      | 0.39222 | 0.83945 | 0.22857         |                                                |
+| **SFT (linxy/LaTeX_OCR:train)**                              | 0.00580      | 0.98201 | 0.99453 | 0.9285          |                                                |
+| **SFT (linxy/LaTeX_OCR:train + deepcopy/MathWriting-human)** | 0.00448      | 0.98665 | 0.99621 | 0.94286         |                                                |
 
 
 
